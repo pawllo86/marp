@@ -11,7 +11,7 @@ public class SpringMVCConfiguration extends WebMvcConfigurerAdapter {
     public void addViewControllers(ViewControllerRegistry registry) {
         super.addViewControllers(registry);
 
-        registry.addViewController("/product").setViewName("product.html");
-        registry.addViewController("/main").setViewName("main.html");
+//        registry.addViewController("/product").setViewName("templates/product.html");
+//        registry.addViewController("/main").setViewName("templates/main.html");
     }
 }

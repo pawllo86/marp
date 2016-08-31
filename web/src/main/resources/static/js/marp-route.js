@@ -1,9 +1,13 @@
-angular.module('appMarp').config(function ($routeProvider, $locationProvider) {
-    $routeProvider.when('/', {
-        templateUrl: '/main'
-    }).when('/product', {
-        templateUrl: '/product'
-    });
+angular.module('appMarp')
+    .config(function ($routeProvider, $locationProvider) {
+        $routeProvider.when('/', {
+            templateUrl: 'template/main.html'
+        }).when('/login', {
+            templateUrl: 'template/login.html'
+        }).when('/product', {
+            templateUrl: 'template/product.html'
+        });
 
-    $locationProvider.html5Mode(true);
-});
+        $locationProvider.html5Mode(true);
+
+    });

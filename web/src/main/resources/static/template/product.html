@@ -1,0 +1,9 @@
+<h1>Produkty</h1>
+
+<div ng-show="authenticated">
+    <p ng-repeat="product in products">{{product.name}}</p>
+</div>
+
+<div  ng-show="!authenticated">
+    <p>Zaloguj sie aby zobaczyć produkty!</p>
+</div>
