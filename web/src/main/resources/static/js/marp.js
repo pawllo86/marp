@@ -1,1 +1,1 @@
-angular.module('appMarp', ['ngRoute']);
+angular.module('appMarp', ['ngRoute', 'authorization']);

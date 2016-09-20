@@ -11,6 +11,9 @@
 
 <body ng-cloak>
     <div class="container">
+
+        <authorization></authorization>
+
         <nav ng-controller="AuthenticationController as ctrl">
             <a href="/">Strona główna</a>
             <a href="/product">Produkty</a>
@@ -21,11 +24,15 @@
         <div ng-view class="container"></div>
     </div>
 
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
     <script src="js/angular.js" type="text/javascript"></script>
     <script src="js/angular-route.js" type="text/javascript"></script>
     <script src="js/marp.js" type="text/javascript"></script>
     <script src="js/marp-route.js" type="text/javascript"></script>
     <script src="js/controller/authentication.js" type="text/javascript"></script>
+    <script src="js/authorization.js" type="text/javascript"></script>
+
 </body>
 
 </html>
