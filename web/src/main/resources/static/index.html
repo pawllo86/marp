@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="appMarp">
+<html lang="pl" ng-app="appMarp">
 
 <head>
     <base href="http://localhost:8080/">
@@ -11,11 +11,11 @@
 
 <body ng-cloak>
     <div class="container">
-        <nav>
+        <nav ng-controller="AuthenticationController as ctrl">
             <a href="/">Strona główna</a>
             <a href="/product">Produkty</a>
-            <a href="/login" target="_self">Zaloguj</a>
-            <a href="" ng-click="logout()" ng-show="authenticated">logout</a></li>
+            <a href="/login">Zaloguj</a>
+            <a href="" ng-click="ctrl.logout()" ng-show="authenticated">Wyloguj</a>
         </nav>
 
         <div ng-view class="container"></div>
@@ -25,6 +25,7 @@
     <script src="js/angular-route.js" type="text/javascript"></script>
     <script src="js/marp.js" type="text/javascript"></script>
     <script src="js/marp-route.js" type="text/javascript"></script>
+    <script src="js/controller/authentication.js" type="text/javascript"></script>
 </body>
 
 </html>
